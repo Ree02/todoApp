@@ -6,12 +6,15 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
 import Header from "~/components/Header.vue";
+import { defineComponent } from "@vue/composition-api";
 
-export default Vue.extend({
+export default defineComponent({
   name: "IndexPage",
   components: { Header },
+  setup() {
+    return {};
+  },
 });
 </script>
 
@@ -20,3 +23,6 @@ div {
   background-color: #fffffe;
 }
 </style>
+
+function defineComponent(arg0: { name: string; components: { Header: any; };
+setup(): void; }) { throw new Error("Function not implemented."); }
