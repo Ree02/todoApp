@@ -1,11 +1,22 @@
 <template>
-  <Tutorial/>
+  <div>
+    <Header />
+    <Tutorial />
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from "vue";
+import Header from "~/components/Header.vue";
 
 export default Vue.extend({
-  name: 'IndexPage'
-})
+  name: "IndexPage",
+  components: { Header },
+});
 </script>
+
+<style scoped>
+div {
+  background-color: #fffffe;
+}
+</style>
