@@ -1,17 +1,18 @@
 <template>
   <div>
     <Header />
-    <Tutorial />
+    <AddTodo />
   </div>
 </template>
 
 <script lang="ts">
 import Header from "~/components/Header.vue";
+import AddTodo from "~/components/molecules/AddTodo.vue";
 import { defineComponent } from "@vue/composition-api";
 
 export default defineComponent({
   name: "IndexPage",
-  components: { Header },
+  components: { Header, AddTodo },
   setup() {
     return {};
   },
@@ -21,8 +22,7 @@ export default defineComponent({
 <style scoped>
 div {
   background-color: #fffffe;
+  font-size: 20px;
+  color: #1b2d45;
 }
 </style>
-
-function defineComponent(arg0: { name: string; components: { Header: any; };
-setup(): void; }) { throw new Error("Function not implemented."); }
