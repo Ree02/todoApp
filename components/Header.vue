@@ -9,11 +9,12 @@
 <style scoped>
 div {
   background-color: #1b2d45;
-  padding-left: 20px;
-  padding-bottom: 10px;
+  padding: 15px;
+  margin: -8px -8px 45px; /* top right,left bottom */
 }
 h1 {
   font-size: 40px;
   color: #fffffe;
+  margin: 0;
 }
 </style>
