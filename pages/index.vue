@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import Header from "~/components/Header.vue";
-import AddTodo from "~/components/molecules/AddTodo.vue";
+import AddTodo from "~/components/organisms/AddTodo.vue";
 import { defineComponent } from "@vue/composition-api";
 
 export default defineComponent({
