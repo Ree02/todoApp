@@ -1,21 +1,29 @@
 <template>
   <div class="container">
-    <InputField />
-    <Button />
+    <InputText />
+    <Button @btn-click="addTodo" />
   </div>
 </template>
 
 <script>
 import { defineComponent } from "@vue/composition-api";
-import InputField from "../atoms/InputField.vue";
-import Button from "../atoms/Button.vue";
+import Button from "@/components/atoms/Button.vue";
+import InputText from "../atoms/InputText.vue";
 
 export default defineComponent({
   components: {
-    InputField,
     Button,
+    InputText,
   },
-  setup() {},
+  setup() {
+    const inputTitle = "";
+    const addTodo = () => {
+      console.log("aaa");
+      console.log("げっと: " + inputTitle);
+      this.$emit("newTodoTitle");
+    };
+    return { inputTitle, addTodo };
+  },
 });
 </script>
 

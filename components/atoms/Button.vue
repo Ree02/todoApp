@@ -1,8 +1,24 @@
 <template>
   <div>
-    <button class="add-button" type="button">追加</button>
+    <button class="add-button" type="button" @click="onClick">追加</button>
   </div>
 </template>
+
+<script>
+import { defineComponent } from "@vue/composition-api";
+
+export default defineComponent({
+  setup() {
+    const onClick = () => {
+      this.$emit("on-click");
+      console.log("click");
+    };
+    return {
+      onClick,
+    };
+  },
+});
+</script>
 
 <style scoped>
 .add-button {
